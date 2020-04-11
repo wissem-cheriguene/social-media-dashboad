@@ -1,0 +1,23 @@
+.toogle-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+    p {
+        color: $blue-text;
+        font-weight: bold;
+    }
+
+    .fa-gradient {
+        font-size: 2rem;
+    	background:-moz-$toogle; 
+        background: -webkit-$toogle; 
+        background: $toogle;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+    }
+    
+}

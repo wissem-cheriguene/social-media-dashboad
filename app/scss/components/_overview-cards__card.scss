@@ -1,0 +1,126 @@
+.overview-cards {
+
+    &__title{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__card {
+        width: 100%;
+        background-color: $bg-card-dark-theme;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        padding:1rem 1.5rem;
+        position: relative;
+
+        & p:nth-child(1){
+            color: $dark-grey-blue-text;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        & p:nth-child(2) {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        & p:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 1rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        &.like {
+            & p:nth-child(3) {
+                color: $lime-green;
+                
+                &::before {
+                    content: '\f0d8';
+                    font-family: 'FontAwesome';
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        &.dislike {
+            & p:nth-child(3) {
+                color: $bright-red;
+                
+                &::before {
+                    content: '\f0d7';
+                    font-family: 'FontAwesome';
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        &--fb {
+            position: relative;
+            &::after {
+                content: '\f230';
+                font-family: 'FontAwesome';
+                top:0;
+                right: 0;
+                padding: 1rem;
+                position: absolute;
+                font-size: 1.5rem;
+                color: $fb-color;
+            }
+        }
+
+        &--tw{
+            position: relative;
+            &::after {
+                content: '\f099';
+                font-family: 'FontAwesome';
+                top:0;
+                right: 0;
+                padding: 1rem;
+                position: absolute;
+                font-size: 1.5rem;
+                color: $tw-color;
+            }
+        }
+
+        &--insta{
+            position: relative;
+            &::after {
+                content: '\f16d';
+                font-family: 'FontAwesome';
+                top:0;
+                right: 0;
+                padding: 1rem;
+                position: absolute;
+                font-size: 1.5rem;
+                background:-moz-$insta-color; 
+                background: -webkit-$insta-color; 
+                background: $insta-color;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color:transparent;
+            }
+        }
+
+        &--yt{
+            position: relative;
+            &::after {
+                content: '\f16a';
+                font-family: 'FontAwesome';
+                top:0;
+                right: 0;
+                padding: 1rem;
+                position: absolute;
+                font-size: 1.5rem;
+                color: $yt-color;
+            }
+        }
+    }
+
+}

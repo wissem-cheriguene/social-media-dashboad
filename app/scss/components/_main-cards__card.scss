@@ -1,0 +1,183 @@
+.main-cards__card {
+    width: 100%;
+    background-color: $bg-card-dark-theme;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    
+   &--fb {
+    border-top: 4px solid $fb-color;
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color:$dark-grey-blue-text;
+        font-weight: bold;
+        &::before {
+            content: '\f230';
+            font-family: 'FontAwesome';
+            color: $fb-color;
+            margin-right: 5px;
+            font-size: 1.5rem;
+        }
+    }
+
+    & p:nth-child(2) {
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 1.3rem;
+        letter-spacing: -4px;
+    }
+    & p:nth-child(3) {
+        color:$dark-grey-blue-text;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+    & p:nth-child(4) {
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+        &::before {
+            content: '\f0d8';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+            color:$bg-card-blue-border;
+        }
+    }
+   } 
+
+   &--tw {
+    border-top: 4px solid $tw-color;
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color:$dark-grey-blue-text;
+        font-weight: bold;
+        &::before {
+            content: '\f099';
+            font-family: 'FontAwesome';
+            color: $tw-color;
+            margin-right: 5px;
+            font-size: 1.5rem;
+        }
+    }
+
+    & p:nth-child(2) {
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 1.3rem;
+        letter-spacing: -4px;
+    }
+    & p:nth-child(3) {
+        color:$dark-grey-blue-text;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+    & p:nth-child(4) {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: $lime-green;
+        &::before {
+            content: '\f0d8';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+        }
+    }
+   } 
+
+   &--insta {
+    border-top: 4px solid;
+    border-image-source: $insta-color;
+    border-image-slice: 1;
+    border-radius: 3px;
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color:$dark-grey-blue-text;
+        font-weight: bold;
+        &::before {
+            content: '\f16d';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+            font-size: 1.5rem;
+            background:-moz-$insta-color; 
+            background: -webkit-$insta-color; 
+            background: $insta-color;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
+        }
+    }
+
+    & p:nth-child(2) {
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 1.3rem;
+        letter-spacing: -4px;
+    }
+    & p:nth-child(3) {
+        color:$dark-grey-blue-text;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+    & p:nth-child(4) {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: $lime-green;
+        &::before {
+            content: '\f0d8';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+        }
+    }
+   } 
+
+   &--yt {
+    border-top: 4px solid $yt-color;
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color:$dark-grey-blue-text;
+        font-weight: bold;
+        &::before {
+            content: '\f16a';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+            font-size: 1.5rem;
+            color: $yt-color;
+            border-radius: 50%;
+        }
+    }
+
+    & p:nth-child(2) {
+        font-weight: bold;
+        font-size: 4rem;
+        margin-bottom: 1.3rem;
+        letter-spacing: -4px;
+    }
+    & p:nth-child(3) {
+        color:$dark-grey-blue-text;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+    & p:nth-child(4) {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: $yt-color;
+        &::before {
+            content: '\f0d7';
+            font-family: 'FontAwesome';
+            margin-right: 5px;
+        }
+    }
+   } 
+
+}

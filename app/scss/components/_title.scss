@@ -1,0 +1,16 @@
+.title {
+    width: 100%;
+    h1 {
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+
+    p {
+        font-weight: bold;
+        color: $blue-text;
+        
+        margin-bottom: 0.8rem;
+    }
+    border-bottom: 1px solid $blue-text;
+}

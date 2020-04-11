@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: linear-gradient(
+        to bottom, $bg-top-very-dark-blue 20%, $bg-very-dark-blue 20%);
+    color: $white-text;
+    font-size: $size;
+}
