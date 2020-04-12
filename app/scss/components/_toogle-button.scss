@@ -5,8 +5,10 @@
     margin-top: 0.8rem;
     margin-bottom: 3rem;
     p {
-        color: $blue-text;
-        font-weight: bold;
+        a{
+            color: $blue-text;
+            font-weight: bold;
+        }
     }
 
     .fa-gradient {
@@ -20,4 +22,14 @@
        -webkit-text-fill-color:transparent;
     }
     
+}
+
+@media screen and (min-width:600px) {
+    .toogle-button {
+        justify-content: flex-end;
+
+        p {
+            margin-right: 5px;
+        }
+    }
 }

@@ -2,3 +2,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (min-width:600px) {
+    .overview-cards {
+        width: 100%;
+    }
+}
+
+// @media screen and (min-width:1000px) {
+//     .overview-cards {
+//         flex-wrap: nowrap;
+//     }
+// }

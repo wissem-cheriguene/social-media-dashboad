@@ -6,6 +6,7 @@
         font-weight: bold;
         margin-top:1rem;
         margin-bottom: 1rem;
+        
     }
 
     &__card {
@@ -16,11 +17,102 @@
         padding:1rem 1.5rem;
         position: relative;
 
-        & p:nth-child(1){
-            color: $dark-grey-blue-text;
-            width: 100%;
+        &--fb {
             font-weight: bold;
+            width: 100%;
             margin-bottom: 2rem;
+            position: relative;
+            a{
+                color: $dark-grey-blue-text;
+                &::after {
+                    content: '\f230';
+                    font-family: 'FontAwesome';
+                    top:0;
+                    right: 0;
+                    position: absolute;
+                    font-size: 1.5rem;
+                    color: $fb-color;
+                }
+                &:hover {
+                    color: $white-text;
+                }
+            }      
+            
+        }
+
+        &--tw {
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 2rem;
+            position: relative;
+            a{
+                color: $dark-grey-blue-text;
+                &::after {
+                    content: '\f099';
+                    font-family: 'FontAwesome';
+                    top:0;
+                    right: 0;
+                    position: absolute;
+                    font-size: 1.5rem;
+                    color: $tw-color;
+                }
+                &:hover {
+                    color: $white-text;
+                }
+            }      
+            
+        }
+
+        &--insta {
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 2rem;
+            position: relative;
+            a{
+                color: $dark-grey-blue-text;
+                &::after {
+                    content: '\f16d';
+                    font-family: 'FontAwesome';
+                    top:0;
+                    right: 0;
+                    position: absolute;
+                    font-size: 1.5rem;
+                    background:-moz-$insta-color; 
+                    background: -webkit-$insta-color; 
+                    background: $insta-color;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color:transparent;
+                }
+                &:hover {
+                    color: $white-text;
+                }
+            }      
+            
+        }
+
+        &--yt {
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 2rem;
+            position: relative;
+            a{
+                color: $dark-grey-blue-text;
+                &::after {
+                content: '\f16a';
+                font-family: 'FontAwesome';
+                top:0;
+                right: 0;
+                position: absolute;
+                font-size: 1.5rem;
+                color: $yt-color;
+            }
+                &:hover {
+                    color: $white-text;
+                }
+            }      
+            
         }
 
         & p:nth-child(2) {
@@ -38,89 +130,58 @@
 
         &.like {
             & p:nth-child(3) {
-                color: $lime-green;
-                
-                &::before {
-                    content: '\f0d8';
-                    font-family: 'FontAwesome';
-                    margin-right: 2px;
+                a {
+                    color: $lime-green;
+
+                    &::before {
+                        content: '\f0d8';
+                        font-family: 'FontAwesome';
+                        margin-right: 2px;
+                    }
                 }
+                
             }
         }
 
         &.dislike {
             & p:nth-child(3) {
-                color: $bright-red;
-                
-                &::before {
-                    content: '\f0d7';
-                    font-family: 'FontAwesome';
-                    margin-right: 2px;
+                a{
+                    color: $bright-red;
+                    
+                    &::before {
+                        content: '\f0d7';
+                        font-family: 'FontAwesome';
+                        margin-right: 2px;
+                    }
                 }
             }
         }
 
-        &--fb {
-            position: relative;
-            &::after {
-                content: '\f230';
-                font-family: 'FontAwesome';
-                top:0;
-                right: 0;
-                padding: 1rem;
-                position: absolute;
-                font-size: 1.5rem;
-                color: $fb-color;
-            }
-        }
-
-        &--tw{
-            position: relative;
-            &::after {
-                content: '\f099';
-                font-family: 'FontAwesome';
-                top:0;
-                right: 0;
-                padding: 1rem;
-                position: absolute;
-                font-size: 1.5rem;
-                color: $tw-color;
-            }
-        }
-
-        &--insta{
-            position: relative;
-            &::after {
-                content: '\f16d';
-                font-family: 'FontAwesome';
-                top:0;
-                right: 0;
-                padding: 1rem;
-                position: absolute;
-                font-size: 1.5rem;
-                background:-moz-$insta-color; 
-                background: -webkit-$insta-color; 
-                background: $insta-color;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color:transparent;
-            }
-        }
-
-        &--yt{
-            position: relative;
-            &::after {
-                content: '\f16a';
-                font-family: 'FontAwesome';
-                top:0;
-                right: 0;
-                padding: 1rem;
-                position: absolute;
-                font-size: 1.5rem;
-                color: $yt-color;
-            }
-        }
     }
 
+}
+
+@media screen and (min-width:600px) {
+    .overview-cards__card {
+        width: calc(51% - 1rem);
+        margin-right: 1rem;
+        &:nth-child(odd){
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .overview-cards__card {
+        width: calc(25% - 0.75rem);
+        &:nth-child(odd){
+            margin-right: 1rem;
+        }
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
 }
