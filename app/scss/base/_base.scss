@@ -3,10 +3,9 @@
 }
 
 .wrapper {
+    min-height: 100vh;
     background: linear-gradient(
-        to bottom, $bg-top-very-dark-blue 20%, $bg-very-dark-blue 20%);
-    color: $white-text;
-    font-size: $size;
+    to bottom, var(--theme-top-bg-color) 20%, var(--theme-bg-color) 20%);
 }
 
 a {

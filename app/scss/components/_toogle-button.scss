@@ -6,16 +6,16 @@
     margin-bottom: 3rem;
     p {
         a{
-            color: $blue-text;
+            color: var(--text-alt-color);
             font-weight: bold;
         }
     }
 
     .fa-gradient {
         font-size: 2rem;
-    	background:-moz-$toogle; 
-        background: -webkit-$toogle; 
-        background: $toogle;
+    	background:-moz-var(--toogle-button-color); 
+        background: -webkit-var(--toogle-button-color); 
+        background: var(--toogle-button-color);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;

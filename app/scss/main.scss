@@ -2,7 +2,8 @@
 @charset 'UTF-8';
 
 // 1. Abstracts
-@import 'abstracts/vars';
+@import 'abstracts/vars',
+        'abstracts/colors';
 // 2. Vendors
 @import '~font-awesome/scss/font-awesome';
 @import '~reset-css/reset.css';

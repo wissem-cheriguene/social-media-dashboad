@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+html,
 body {
-    
-    font-family: 'Inter', sans-serif;
+        
     line-height: 1.3rem;
-    font-size: $size;
+    font-size: $font-size-small;
+    
+    @media screen and (min-width:600px) {
+        font-size: $font-size-medium;
+    }
+    
+    @media screen and (min-width:1000px) {
+        font-size: $font-size-large;
+    }
 }
 
-a,
+body,
+a {
+    color: var(--text-alt-color);
+    font-family: $font-family;
+}
+
 h1,
 h2,
 h3,
@@ -15,5 +28,6 @@ h4,
 h5,
 h6
 {
-    font-family: 'Inter', sans-serif;
+    font-family: $font-family;
+    color: var(--text-color);
 }

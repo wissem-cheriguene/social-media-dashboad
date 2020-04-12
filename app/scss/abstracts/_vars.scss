@@ -1,9 +1,17 @@
 // The designs were created to the following widths:
 
+    /*****************************
+    ************LAYOUT************
+    ******************************/
+
 // Mobile: 375px
 // Desktop: 1440px
-// Colors
-// Primary
+
+    /*****************************
+    ************COLORS************
+    ******************************/
+            /* Primary */
+
 // Lime Green: hsl(163, 72%, 41%)
 $lime-green:hsl(163, 72%, 41%);
 // Bright Red: hsl(356, 69%, 56%)
@@ -17,39 +25,51 @@ $insta-color: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 // YouTube: hsl(348, 97%, 39%)
 $yt-color: hsl(348, 97%, 39%);
 
-// Dark Theme
-// Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
-$toogle: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
-// Light Theme
-// Toggle: hsl(230, 22%, 74%)
-// Neutral
-// Dark Theme
-// Very Dark Blue (BG): hsl(230, 17%, 14%)
-$bg-very-dark-blue:hsl(230, 17%, 14%);
-// Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-$bg-top-very-dark-blue: hsl(232, 19%, 15%);
-// Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-$bg-card-dark-theme:hsl(228, 28%, 20%);
-$bg-card-blue: hsl(228, 28%, 20%);
-// Desaturated Blue (Text): hsl(228, 34%, 66%)
-$blue-text: hsl(228, 34%, 66%);
-// White (Text): hsl(0, 0%, 100%)
-$white-text: hsl(0, 0%, 100%);
-// Light Theme
-// White (BG): hsl(0, 0%, 100%)
-$bg-white: hsl(0, 0%, 100%);
-// Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
-// Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
-$bg-card-blue-border:hsl(210, 78%, 56%) ;
-// Dark Grayish Blue (Text): hsl(228, 12%, 44%)
-$dark-grey-blue-text: hsl(228, 12%, 44%);
-// Very Dark Blue (Text): hsl(230, 17%, 14%)
-$very-dark-blue-text:hsl(230, 17%, 14%);
-// Typography
+//         // Dark Theme
+// // Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+// $dark-theme-toogle: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+
+//         // Light Theme
+// // Toggle: hsl(230, 22%, 74%)
+// $light-theme-toogle:hsl(230, 22%, 74%);
+
+//         /* Neutral */
+
+//         // Dark Theme
+// // Very Dark Blue (BG): hsl(230, 17%, 14%)
+// $dark-theme-bg:hsl(230, 17%, 14%);
+// // Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+// $dark-theme-top-bg: hsl(232, 19%, 15%);
+// // Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+// $bg-card-dark-theme:hsl(228, 28%, 20%);
+// // Desaturated Blue (Text): hsl(228, 34%, 66%)
+// $blue-text: hsl(228, 34%, 66%);
+// // White (Text): hsl(0, 0%, 100%)
+// $white-text: hsl(0, 0%, 100%);
+
+//             // Light Theme
+// // White (BG): hsl(0, 0%, 100%)
+// $light-theme-bg: hsl(0, 0%, 100%);
+// // Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+// $light-theme-top-bg:hsl(225, 100%, 98%);
+// // Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+// $bg-card-blue-border:hsl(210, 78%, 56%) ;
+// // Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+// $dark-grey-blue-text: hsl(228, 12%, 44%);
+// // Very Dark Blue (Text): hsl(230, 17%, 14%)
+// $very-dark-blue-text:hsl(230, 17%, 14%);
+
+    /*****************************
+    ************Typo**************
+    ******************************/
 // Body Copy
 // Font size (Overview Card Headings): 14px
-$size: 14px; 
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+
 // Font
 // Family: Inter
 $fa-font-path: '~font-awesome/fonts';
+$font-family: 'Inter', sans-serif;
 // Weights: 400, 700

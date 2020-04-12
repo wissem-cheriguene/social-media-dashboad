@@ -1,5 +1,6 @@
 .title {
     width: 100%;
+    border-bottom: 1px solid var(--text-color);
     h1 {
         font-weight: bold;
         font-size: 1.6rem;
@@ -8,11 +9,9 @@
 
     p {
         font-weight: bold;
-        color: $blue-text;
-        
+        color: var(--text-alt-color);
         margin-bottom: 0.8rem;
     }
-    border-bottom: 1px solid $blue-text;
 
     @media screen and (min-width:600px)  {
         border: none;
